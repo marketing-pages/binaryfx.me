@@ -5,7 +5,7 @@
     <title>Binary.com - Explore the world’s financial markets</title>
     <link rel="icon" href="assets/images/binary-icon.png" sizes="57x57"/>
     <meta name="description" content="Discover everything you need to know about online trading with Binary.com. Smart Trader, Auto Trader, MetaTrader 5 and more. Learn more about Binary.com trading platforms.">
-    <link rel="canonical" href="https://binary.associates/index.html">
+    <link rel="canonical" href="https://binaryfx.me/index.html">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400&subset=cyrillic,vietnamese">
     <style amp-custom>
@@ -17,7 +17,7 @@
       "@type": "NewsArticle",
       "headline": "Binary.com - Explore the world’s financial markets",
       "image": [
-        "assets/images/smart-trader-lg.png"
+        "https://binaryfx.me/assets/images/smart-trader-lg.png"
       ],
       "datePublished": "2018-11-09T01:00:00-08:00"
     }
@@ -26,20 +26,30 @@
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
     <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-    <amp-analytics type="gtag" data-credentials="include">
-        <script type="application/json">
-        {
-        "vars" : {
-            "gtag_id": UA-129271696-1,
-            "config" : {
-                UA-129271696-1: { "groups": "default" }
-            }
-        }
-        }
-        </script> 
-    </amp-analytics>
     </head>
     <body>
+        <amp-analytics type="gtag" data-credentials="include">
+            <script type="application/json">
+                {
+                "vars": {
+                    "gtag_id": UA-129271696-1,
+                    "config": {
+                        UA-129271696-1: { "groups": "default" }
+                    }
+                },
+                "triggers": {
+                    "button": {
+                    "selector": "#start-now",
+                    "on": "click",
+                    "vars": {
+                        "event_name": "login",
+                        "method": "Google"
+                    }
+                    }
+                }
+                }
+            </script>
+        </amp-analytics>
         <div class="header">
             <div class="topbar">
                 <div class="content">
@@ -61,7 +71,7 @@
             <div class="center-text">
                 <h1 class="title-xl">Explore the world’s financial markets</h1>
                 <p class="content-inverse-color">Discover everything you need to know about online trading</p>
-                <div class="cta"><a class="button button-xl" href="https://www.binary.me" title="Get Started with binary.com Now">Get Started Now</a></div>
+                <div class="cta"><a id="start-now" class="button button-xl" href="https://www.binary.me" title="Get Started with binary.com Now">Get Started Now</a></div>
             </div>
         </div>
         <div class="section center-text">
