@@ -595,7 +595,13 @@ table {
 
 .section-title {
   margin-bottom: 45px;
-  font-size: 36px; }
+  font-size: 42px; }
+
+.section-subtitle {
+  margin-top: -30px;
+  margin-bottom: 90px;
+  font-size: 24px;
+  font-weight: 400; }
 
 .video {
   width: 800px;
@@ -630,11 +636,21 @@ table {
   font-size: 36px;
   margin: 0; }
 
+.h2-xl {
+  font-weight: 300;
+  font-size: 36px; }
+
+.col-title {
+  font-weight: bold; }
+
 .center-text {
   text-align: center; }
 
 .bottom-md {
   margin-bottom: 30px; }
+
+.bottom-xl {
+  margin-bottom: 60px; }
 
 .divider-md {
   height: 30px; }
@@ -685,3 +701,12 @@ table {
     font-size: 36px;
     line-height: 36px;
     margin-top: 30px; } }
+
+.ft-bold {
+  font-weight: bold; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.spacing-1 {
+  letter-spacing: 1px; }
