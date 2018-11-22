@@ -16,9 +16,14 @@
     padding-top: 160px;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(42, 48, 82, 0.6), rgba(42, 48, 82, 0.1)), url('assets/images/header-img-min.jpg') no-repeat;
+    background: linear-gradient(rgba(42, 48, 82, 0.6), rgba(42, 48, 82, 0.1)), url('/assets/images/header-img-min.jpg') no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.language {
+    text-align: right;
+    margin-top: 15px;
 }
 
 .ft-icon {
@@ -121,10 +126,6 @@
     margin-top: 40px;
 }
 
-.language {
-    text-align: right;
-    margin-top: 15px;
-}
 /* stylelint-enable color-no-hex */
 
 @media screen and (max-width: 1024px) {
