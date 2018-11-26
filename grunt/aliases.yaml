@@ -1,4 +1,4 @@
-default:
+dev:
   - 'stylelint'
   - 'sass'
   - 'postcss'
@@ -10,7 +10,7 @@ default:
   - 'connect:livereload'
   - 'watch'
 
-dev:
+default:
   - 'stylelint'
   - 'sass'
   - 'postcss'
