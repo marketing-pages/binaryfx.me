@@ -2,7 +2,7 @@ module.exports = function (grunt) {
   return {
     html: {
       files: ['src/**/*.html'],
-      tasks: ['copy', 'includes'],
+      tasks: ['copy', 'includes', 'htmlmin'],
     },
     css: {
       files: ['src/sass/*.scss'],

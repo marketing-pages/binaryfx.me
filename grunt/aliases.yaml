@@ -1,15 +1,3 @@
-dev:
-  - 'stylelint'
-  - 'sass'
-  - 'postcss'
-  - 'cssmin'
-  - 'svgmin'
-  - 'imagemin'
-  - 'copy'
-  - 'includes'
-  - 'connect:livereload'
-  - 'watch'
-
 default:
   - 'stylelint'
   - 'sass'
@@ -19,7 +7,6 @@ default:
   - 'imagemin'
   - 'copy'
   - 'includes'
-  - 'htmlmin' 
   - 'connect:livereload'
   - 'watch'
 
@@ -28,4 +15,13 @@ serve:
   - 'watch'
   
 deploy:
+  - 'stylelint'
+  - 'sass'
+  - 'postcss'
+  - 'cssmin'
+  - 'svgmin'
+  - 'imagemin'
+  - 'copy'
+  - 'includes'
+  - 'htmlmin'
   - 'buildcontrol' 
