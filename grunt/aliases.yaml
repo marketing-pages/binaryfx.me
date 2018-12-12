@@ -24,3 +24,6 @@ deploy:
   - 'copy'
   - 'includes'
   - 'buildcontrol' 
+
+img:
+  - 'imagemin'
