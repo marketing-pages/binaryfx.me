@@ -12,7 +12,7 @@
 	<meta property="og:url" content="https://binaryfx.me" />
     <meta property="og:image" content="https://binaryfx.me/assets/images/smart-trader-lg.png" />
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400&subset=cyrillic,vietnamese">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400">
     <style amp-custom>
     include "style.min.css"
     </style>
@@ -48,12 +48,9 @@
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
     <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <script async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
+    <script async custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"></script>
     <script async src="https://cdn.ampproject.org/v0.js"></script>
-      <!--  Import amp-position-observer extension -->
-  <script async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
-
-  <!--  Import amp-animation extension -->
-  <script async custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"></script>
     </head>
     <body>
         <amp-analytics type="gtag" data-credentials="include">
@@ -68,7 +65,6 @@
             }
             </script>
         </amp-analytics>
-        
         <amp-animation id="showAnim" layout="nodisplay">
             <script type="application/json">
                 {
@@ -87,8 +83,7 @@
                 }
             </script>
         </amp-animation>
-            <!-- ... and the second one is for adding the button.-->
-            <amp-animation id="hideAnim" layout="nodisplay">
+        <amp-animation id="hideAnim" layout="nodisplay">
             <script type="application/json">
                 {
                 "duration": "200ms",
@@ -106,13 +101,12 @@
                 }
             </script>
         </amp-animation>
-              <!-- We use `amp-position-observer` to start the animation when the user starts to scroll. -->
-             <div id="marker">
-               <amp-position-observer
-                  on="enter:hideAnim.start; exit:showAnim.start"
-                  layout="nodisplay">
-                </amp-position-observer>
-              </div>
+        <div id="marker">
+            <amp-position-observer
+                on="enter:hideAnim.start; exit:showAnim.start"
+                layout="nodisplay">
+            </amp-position-observer>
+        </div>
         <div id="top-page"></div>
         <div class="header">
             <div class="topbar">
@@ -129,21 +123,21 @@
                                 <a class="content-inverse-color" href="/id/">Indonesia</a>
                             </div>
                             <div class="nav">
-                                <a href="#what-is-mt5">What is MT5?</a>
-                                <a href="#mt5-account-signup">How to sign up?</a>
-                                <a href="#types-of-mt5-accounts">Types of MT5 accounts</a>
-                                <a href="#mt4-mt5">MT4 vs MT5</a>
-                                <a href="#learn-mt5">Learn MT5</a>
+                                <a on="tap:what-is-mt5.scrollTo">What is MT5?</a>
+                                <a on="tap:mt5-account-signup.scrollTo">How to sign up?</a>
+                                <a on="tap:types-of-mt5-accounts.scrollTo">Types of MT5 accounts</a>
+                                <a on="tap:mt4-mt5.scrollTo">MT4 vs MT5</a>
+                                <a on="tap:learn-mt5.scrollTo">Learn MT5</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="center-text">
+            <div class="center-text header-content">
                 <div class="content">
                     <div class="grid grid-center">
                         <div class="col col-8 col-lg">
-                            <h1 class="title-xl ">Use MetaTrader 5 (MT5) to trade Forex, CFDs, and more across world markets.</h1>
+                            <h1 class="title-xl">Use MetaTrader 5 (MT5) to trade Forex, CFDs, and more across world markets.</h1>
                         </div>
                     </div>
                 </div>
@@ -151,7 +145,8 @@
                     <div class="col-ico">
                         <amp-img src=/assets/svg/experience-trading-white.svg width=150 height=150 alt="MT5 free trading software"><div fallback>MT5 free trading software</div></amp-img>
                     </div>    
-                    <a class="button button-xl" href="https://www.binary.com/en/home.html?account_tabs=mt5&market_tabs=binary">Get Started Now</a></div>
+                    <a class="button button-xl" href="https://www.binary.com/en/home.html?account_tabs=mt5&market_tabs=binary">Get Started Now</a>
+                </div>
             </div>
         </div>
         <div id="what-is-mt5" class="section center-text">
@@ -159,7 +154,7 @@
                 <div class="col">
                     <h2 class="section-title">What is MT5?</h2>
                     <div class="video">
-                        <amp-youtube width="560" title="Forex trading at a glance" height="315" layout="responsive" data-videoid="YbnnSeQT2NI"></amp-youtube>
+                        <amp-youtube width="560" title="Forex trading at a glance" height="315" layout="responsive" data-videoid="jwDjsXxjXPo"></amp-youtube>
                     </div>
                 </div>
             </div>
@@ -183,7 +178,7 @@
                 <div class="divider-md md-hide"></div>
                 <div class="grid grid-center">
                     <div class="col col-4 col-md col-ico">
-                        <amp-img src=/assets/svg/seamless.svg width=80 height=80 alt="Seamless execution with MT5"><div fallback>Seamless execution with MT5</div></amp-img>
+                        <amp-img src=/assets/svg/seamless.svg width=90 height=90 alt="Seamless execution with MT5"><div fallback>Seamless execution with MT5</div></amp-img>
                         <h3 class="col-title">Seamless execution</h3>
                         <p>Enjoy hassle-free integration with your Binary.com account.</p>
                     </div>
@@ -214,7 +209,7 @@
                 <div class="divider-md md-hide"></div>
                 <div class="grid grid-center">
                     <div class="col col-4 col-md col-ico">
-                        <amp-img src=/assets/svg/charts-news.svg width=88 height=88 alt="Charts, news and analysis with MT5"><div fallback>Charts, news and analysis with MT5</div></amp-img>
+                        <amp-img src=/assets/svg/charts-news.svg width=80 height=80 alt="Charts, news and analysis with MT5"><div fallback>Charts, news and analysis with MT5</div></amp-img>
                         <p>MT5 provides charts and financial news, enabling precise analysis and forecasting to help you get the edge you need.</p>
                     </div>
                     <div class="col col-1 col-md"></div>
