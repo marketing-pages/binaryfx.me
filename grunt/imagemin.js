@@ -5,12 +5,12 @@ module.exports = {
         optimizationLevel: 7,
         progressive: false,
         svgoPlugins: [{ removeViewBox: false }],
-        use: [mozjpeg({fastCrush: true, quality: 80, smooth: 100})]
+        use: [mozjpeg({fastCrush: true, quality: 60, smooth: 100})]
       },
         files: [{
           expand: true,
           cwd: 'src/assets/',
-          src: ['images/*.{png,jpg,gif}'],
+          src: ['images/**/*.{png,jpg,jpeg,gif}'],
           dest: 'dist/assets'
         }]
       }
