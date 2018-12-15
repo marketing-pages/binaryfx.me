@@ -595,6 +595,9 @@ table {
   margin-top: 0px; }
   .language a {
     margin-left: 5px; }
+    .language a:hover {
+      text-decoration: none;
+      color: #cccccc; }
 
 .nav {
   margin-top: 10px;
@@ -618,6 +621,11 @@ table {
   margin: 0;
   margin-top: 40px;
   letter-spacing: -1px; }
+
+.button-xl {
+  font-size: 28px;
+  font-weight: 300;
+  padding: 15px 40px; }
 
 .cta {
   margin-top: 60px; }
