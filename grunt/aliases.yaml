@@ -23,6 +23,7 @@ deploy:
   - 'imagemin'
   - 'copy'
   - 'includes'
+  - 'htmlmin' 
   - 'buildcontrol' 
 
 img:
