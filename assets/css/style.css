@@ -670,6 +670,11 @@ table {
   font-size: 36px;
   margin: 0; }
 
+.title-xs {
+  font-weight: 400;
+  font-size: 11px;
+  margin: 0; }
+
 .h2-xl {
   font-weight: 300;
   font-size: 36px; }
